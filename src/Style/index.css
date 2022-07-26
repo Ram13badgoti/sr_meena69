@@ -1,0 +1,405 @@
+
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+html {
+  font-size: 60.5%;
+}
+
+
+
+/* Home page CSS */
+
+.Home {
+height: 90vh;
+width: 100vw;
+background-image: url("C:\Users\pc\OneDrive\Desktop\coding\web project\ReactJs\portfolio\public\bg.png");
+  color:black;
+  display: grid;
+place-items: center;
+margin: auto;
+}
+.Home .Home_content {
+  text-align: center;
+  
+
+}
+.Home p{
+  font-size: 3.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Anton', Arial, sans-serif;
+  text-shadow: 0px 5px 6px rgb(21, 19, 19);
+
+
+ 
+}
+
+.Home .Home_title {
+  color:white;
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  font-family: 'Anton', Arial, sans-serif;
+  text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #c97221, 
+      0 2px 0 #c97221, 
+      0 3px 0 #c97221, 
+      0 4px 0 #c97221, 
+      0 5px 0 #c97221, 
+      0 6px 0 #c97221, 
+      0 7px 0 rgb(203, 86, 35), 
+     
+      
+      0 5px 10px rgba(228, 17, 17, 0.9);
+  
+
+ }
+.Typeing{
+  color: crimson;
+font-size: 3rem;
+font-weight: 600;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+font-family: 'Anton', Arial, sans-serif;
+text-shadow: -15px 5px 20px rgb(229, 22, 36);
+
+
+
+
+}
+
+/* About Page CSS */
+
+.container img{
+background:transparent;
+  margin-top: 4rem;
+  width: 380px;
+  height: 380px;
+}
+.col .about_title{
+  position: relative;
+  margin-top: 4rem;
+font-size: 2.5rem;
+font-weight: 500;
+color: rgb(233, 96, 96);
+
+}
+
+
+
+
+
+
+
+
+.skillsGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    grid-auto-rows: auto;
+    height: auto;
+   
+  }
+.skillsGrid img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+ 
+
+}
+.skills{
+ 
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 60px;
+}
+.skills .Heading{
+  font-size: 30px;
+}
+.skillLanguages{
+  margin-top: 10px;
+  display:flex;
+   flex-direction:column;
+   float:left;
+    font-Size:20px;
+    opacity: 1;
+    }
+
+
+
+/* Project Card CSS */
+.cards {
+
+  float: left;
+  padding: 50px;
+   
+}
+
+
+.card {
+  width: 30rem;
+  height: 40rem;
+
+  box-shadow: 0 2.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  box-shadow: rgba(237, 235, 235, 0.25) 0 8px 15px;
+  transform: translateY(1px);
+  background-color: rgb(157, 239, 198);
+  color: #fffdfa;
+}
+
+img {
+  width: 100%;
+  height: 45%;
+}
+.card_info {
+  margin: 10px;
+}
+.title {
+  display: flex;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  justify-content: center;
+  color: red;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+display: flex;
+align-items: center;
+justify-content: center;
+  font-size: 18px;
+  width: 10rem;
+  height: 4rem;
+  color: #fffdfa;
+  cursor: pointer;
+  margin: 10px 10px;
+  padding: auto;
+  background-color: rgb(63, 36, 89);
+  position: absolute;
+  border-radius: 4rem;
+}
+
+button:hover {
+  box-shadow: rgba(223, 166, 225, 0.308) 0 8px 15px;
+  background-color: rgb(167, 93, 174);
+  border: none;
+  color: white;
+}
+
+.details {
+
+  margin: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+ 
+@media  (max-width: 1080px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      grid-auto-rows: auto;
+      height: auto;
+     
+    }
+  .skillsGrid img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+   
+  
+  }
+  .skills{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 40px;
+  }
+  .skills .heading{
+    font-size: 35px;
+  }
+  .skillLanguages{
+    margin-top: 10px;
+    display:flex;
+     flex-direction:column;
+     float:left;
+      font-Size:20px;
+      }
+  }
+  
+
+  @media (max-width: 998px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      grid-auto-rows: auto;
+      height: auto;
+     
+    }
+  .skillsGrid img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+   
+  
+  }
+  .skills{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-top: 15px;
+   
+  
+  }
+  .skills .heading{
+    font-size: 20px;
+
+  }
+  .skillLanguages{
+    margin-top: 10px;
+    display:flex;
+     flex-direction:column;
+     float:left;
+      font-Size:20px;
+      }
+      .container img{
+        background:transparent;
+          margin-top: 3rem;
+          width: 300px;
+          height: 300px;
+        }
+  }
+   @media (max-width: 700px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      grid-auto-rows: auto;
+      height: auto;
+     
+    }
+  .skillsGrid img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+   
+  
+  }
+  .skills{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  
+  }
+  .skills .heading{
+    font-size: 20px;
+
+  }
+  .skillLanguages{
+    margin-top: 10px;
+    display:flex;
+     flex-direction:column;
+     float:left;
+      font-Size:20px;
+      }
+      .container img{
+        background:transparent;
+          margin-top: 1rem;
+          width: 400px;
+          height: 400px;
+        }
+  }
+
+
+  @media(max-width: 550px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      grid-auto-rows: auto;
+      height: auto;
+     
+    }
+  .skillsGrid img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+   
+  
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content:flex-start;
+    align-items:center;
+    height: 100vh;
+  margin-top: 10px;
+  font-size: 15px;
+  }
+ 
+  .skillLanguages{
+   
+    display:flex;
+     flex-direction:column;
+     float:left;
+      font-Size:15px;
+      }
+      
+.container img{
+  background:transparent;
+    margin-top: 1rem;
+    width: 250px;
+    height: 250px;
+  }
+  .cards {
+
+    float: left;
+    padding: 30px;
+     
+  }
+  
+  }
