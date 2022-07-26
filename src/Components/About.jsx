@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
    
-   <div className="about_container" style={{backgroundImage:`url("bg.png")`,height:"100vh"}} >
+   <div className="about_container" >
      
        
 
